@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangavi B - Portfolio</title>
+        <script src="https://cdn.tailwindcss.com"></script> <!-- CSS Framework -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #1e40af 0%, #312e81 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .skill-bar {
+            transition: width 2s ease-in-out;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in-up {
+            animation: fadeInUp 0.6s ease-out;
+        }
+        
+        .section-divider {
+            background: linear-gradient(90deg, transparent, #1e40af, transparent);
+            height: 2px;
+            width: 100%;
+            margin: 3rem 0;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a3e 50%, #0f0f23 100%);
+        }
+        
+        .dark-section {
+            background: linear-gradient(135deg, #0a0a1a 0%, #1e1e3f 100%);
+        }
+        
+        .darker-section {
+            background: linear-gradient(135deg, #050510 0%, #15152a 100%);
+        }
+    </style>
+</head>
+<body class="text-gray-100">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-gray-900/90 backdrop-blur-sm shadow-lg z-50 border-b border-blue-800/30">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold gradient-text">Sangavi B</h1>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#about" class="hover:text-blue-400 transition">About</a>
+                    <a href="#education" class="hover:text-blue-400 transition">Education</a>
+                    <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+                    <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+                    <a href="#certifications" class="hover:text-blue-400 transition">Certifications</a>
+                    <a href="#achievements" class="hover:text-blue-400 transition">Achievements</a>
+                    <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-white">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-20 min-h-screen flex items-center justify-center dark-section">
+        <div class="container mx-auto px-6 py-16 text-center fade-in-up">
+            <div class="mb-8">
+                <div class="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-indigo-300/70 shadow-lg shadow-indigo-500/30">
+                    <img src="images 2/WhatsApp Image 2026-10-14 at 10.07.04 AM.jpeg" alt="Sangavi B professional photo" class="w-full h-full object-cover">
+                </div>
+                <h1 class="text-5xl md:text-6xl font-bold mb-4 gradient-text">Sangavi B</h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-6">AI & ML Enthusiast / Working with Python & Machine Learning / Building projects on ML. Eduphonix CLOUD CERTIFIED INTERN</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto mb-12">
+                <p class="text-lg text-gray-300 leading-relaxed">
+                    Passionate AI & ML Enthusiast with expertise in Python and Machine Learning. 
+                    Committed to building innovative projects and solving real-world challenges. Eduphonix CLOUD CERTIFIED INTERN.
+                </p>
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-full transition flex items-center gap-2 hover:bg-blue-700 shadow-lg shadow-blue-500/20">
+                    <i class="fas fa-envelope"></i> Get in Touch
+                </a>
+                <a href="#projects" class="border-2 border-blue-600 text-blue-400 px-8 py-3 rounded-full transition hover:bg-blue-600 hover:text-white shadow-lg shadow-blue-500/10">
+                    View Projects
+                </a>
+            </div>
+            
+            <div class="flex justify-center space-x-6 text-gray-400">
+                <a href="https://www.linkedin.com/in/sangavi-b" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition" title="Connect with me on LinkedIn"><i class="fab fa-linkedin text-2xl"></i></a>
+                <a href="https://github.com/Sangavi-04" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition" title="View my GitHub profile"><i class="fab fa-github text-2xl"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 darker-section">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text">About Me</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Professional Summary</h3>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        Innovative and detail-oriented developer with a strong foundation in machine learning, IoT systems, and artificial intelligence. 
+                        Experienced in developing comprehensive solutions that integrate hardware and software components to solve real-world problems.
+                    </p>
+                    <p class="text-gray-300 leading-relaxed">
+                        My expertise spans from frontend development to backend systems, with a particular focus on 
+                        creating intelligent applications that leverage AI and machine learning techniques. I'm passionate 
+                        about building projects that make a meaningful impact on people's lives.
+                    </p>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="bg-blue-900/30 p-6 rounded-lg card-hover border border-blue-700/30">
+                        <h4 class="font-semibold text-blue-300 mb-2"><i class="fas fa-phone mr-2"></i> Contact</h4>
+                        <p class="text-gray-300">9600437930</p>
+                    </div>
+                    <div class="bg-indigo-900/30 p-6 rounded-lg card-hover border border-indigo-700/30">
+                        <h4 class="font-semibold text-indigo-300 mb-2"><i class="fas fa-envelope mr-2"></i> Email</h4>
+                        <p class="text-gray-300">sangaviboopal50@gmail.com</p>
+                    </div>
+                    <div class="bg-cyan-900/30 p-6 rounded-lg card-hover border border-cyan-700/30">
+                        <h4 class="font-semibold text-cyan-300 mb-2"><i class="fas fa-map-marker-alt mr-2"></i> Location</h4>
+                        <p class="text-gray-300">Dharmapuri, Tamil Nadu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 dark-section">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text">Education</h2>
+            
+            <div class="space-y-8 max-w-4xl mx-auto">
+                <div class="bg-gray-800/50 p-8 rounded-lg shadow-lg card-hover border border-gray-700">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-blue-900/50 p-3 rounded-full">
+                            <i class="fas fa-graduation-cap text-blue-400 text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-semibold mb-2">M. Kumarasamy College of Engineering (Affiliated by Anna University, Autonomous)</h3>
+                            <p class="text-gray-400 mb-2">Bachelor of Engineering in Computer Science (Artificial Intelligence and Machine Learning)</p>
+                            <p class="text-sm text-gray-500">Batch 2023-2027</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800/50 p-8 rounded-lg shadow-lg card-hover border border-gray-700">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-indigo-900/50 p-3 rounded-full">
+                            <i class="fas fa-school text-indigo-400 text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-semibold mb-2">Paramveer Hi-Tech Matric Higher Secondary School, Paupparapatti</h3>
+                            <p class="text-gray-400 mb-2">Higher Secondary Education</p>
+                            <p class="text-sm text-gray-500">Batch 2019-2021</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800/50 p-8 rounded-lg shadow-lg card-hover border border-gray-700">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-cyan-900/50 p-3 rounded-full">
+                            <i class="fas fa-book text-cyan-400 text-xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-semibold mb-2">Government Girls Higher Secondary School in Papparapatti</h3>
+                            <p class="text-gray-400 mb-2">Secondary Education</p>
+                            <p class="text-sm text-gray-500">Batch 2018-2019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 darker-section">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text">Technical Skills</h2>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="bg-gradient-to-br from-blue-900/30 to-indigo-900/30 p-6 rounded-xl card-hover border border-blue-700/30 min-h-[260px]">
+                    <h3 class="text-2xl font-semibold mb-6 text-blue-300 flex items-center gap-3">
+                        <span class="bg-blue-900/50 w-11 h-11 rounded-full flex items-center justify-center"><i class="fas fa-code"></i></span>
+                        Basics
+                    </h3>
+                    <ul class="space-y-3 text-lg text-gray-200">
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-blue-400"></i> Java</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-blue-400"></i> Python</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-blue-400"></i> AWS</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-blue-400"></i> RAG</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-blue-400"></i> LLM</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-indigo-900/30 to-cyan-900/30 p-6 rounded-xl card-hover border border-indigo-700/30 min-h-[260px]">
+                    <h3 class="text-2xl font-semibold mb-6 text-indigo-300 flex items-center gap-3">
+                        <span class="bg-indigo-900/50 w-11 h-11 rounded-full flex items-center justify-center"><i class="fas fa-cogs"></i></span>
+                        Intermediate
+                    </h3>
+                    <ul class="space-y-3 text-lg text-gray-200">
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-indigo-400"></i> HTML/CSS</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-indigo-400"></i> JavaScript</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-indigo-400"></i> React.js</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-indigo-400"></i> REST API</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="mt-20">
+                <h3 class="text-4xl font-bold text-center mb-10 text-white">Soft Skills</h3>
+                <div class="flex flex-wrap justify-center gap-5 max-w-4xl mx-auto">
+                    <span class="bg-gradient-to-r from-blue-900/40 to-blue-800/40 text-blue-300 px-8 py-4 rounded-full font-semibold border border-blue-700/40 shadow-lg">Time Management</span>
+                    <span class="bg-gradient-to-r from-indigo-900/40 to-indigo-800/40 text-indigo-300 px-8 py-4 rounded-full font-semibold border border-indigo-700/40 shadow-lg">Adaptability</span>
+                    <span class="bg-gradient-to-r from-cyan-900/40 to-cyan-800/40 text-cyan-300 px-8 py-4 rounded-full font-semibold border border-cyan-700/40 shadow-lg">Communication</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 dark-section">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text">Projects</h2>
+            
+            <div class="space-y-12 max-w-6xl mx-auto">
+                <!-- Project 1 -->
+                <div class="bg-gray-800/50 rounded-lg shadow-xl overflow-hidden card-hover border border-gray-700">
+                    <div class="md:flex">
+                        <div class="md:w-1/3 relative overflow-hidden bg-gradient-to-br from-blue-600 to-indigo-800">
+                            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop" alt="ChefSphere Smart Kitchen" class="w-full h-full object-cover opacity-70">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="text-center text-white p-4">
+                                    <i class="fas fa-utensils text-6xl mb-2"></i>
+                                    <p class="text-sm font-semibold">Smart Kitchen AI</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 p-8">
+                            <h3 class="text-2xl font-bold mb-4 text-blue-300">ChefSphere - Smart AI-Based Cooking Assistant</h3>
+                            <p class="text-gray-300 mb-6 leading-relaxed">
+                                Developed an intelligent smart kitchen system integrating mobile application, IoT sensors, and AI techniques for real-time cooking guidance. 
+                                Uses an ESP32-based control box to monitor temperature, ingredient quantity, gas leakage, and smoke levels.
+                            </p>
+                            <div class="mb-6">
+                                <h4 class="font-semibold mb-2">Key Features:</h4>
+                                <ul class="list-disc list-inside text-gray-400 space-y-1">
+                                    <li>Personalized recipe recommendations</li>
+                                    <li>Live step-by-step voice guidance</li>
+                                    <li>Integrated chatbot for assistance</li>
+                                    <li>Bio-inspired optimization algorithms for efficiency</li>
+                                </ul>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-blue-900/30 text-blue-300 px-3 py-1 rounded-full text-sm border border-blue-700/30">IoT</span>
+                                <span class="bg-indigo-900/30 text-indigo-300 px-3 py-1 rounded-full text-sm border border-indigo-700/30">AI</span>
+                                <span class="bg-cyan-900/30 text-cyan-300 px-3 py-1 rounded-full text-sm border border-cyan-700/30">ESP32</span>
+                                <span class="bg-green-900/30 text-green-300 px-3 py-1 rounded-full text-sm border border-green-700/30">Mobile App</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <button onclick="showProjectDetails('ChefSphere')" class="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition-all duration-200 flex items-center gap-2">
+                                    <i class="fas fa-info-circle"></i>
+                                    View Details
+                                </button>
+                                <button onclick="showChefSphereDemo()" class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-4 py-2 rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-all duration-200 flex items-center gap-2">
+                                    <i class="fas fa-play-circle"></i>
+                                    View Demo
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="bg-gray-800/50 rounded-lg shadow-xl overflow-hidden card-hover border border-gray-700">
+                    <div class="md:flex">
+                        <div class="md:w-1/3 relative overflow-hidden bg-gradient-to-br from-indigo-600 to-blue-800">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop" alt="Vehicle Service Management" class="w-full h-full object-cover opacity-70">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="text-center text-white p-4">
+                                    <i class="fas fa-car text-6xl mb-2"></i>
+                                    <p class="text-sm font-semibold">Service Management</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 p-8">
+                            <h3 class="text-2xl font-bold mb-4 text-indigo-300">Vehicle Service Center Management System</h3>
+                            <p class="text-gray-300 mb-6 leading-relaxed">
+                                Designed and developed a comprehensive management system using DBMS concepts to automate customer details, 
+                                service requests, and vehicle maintenance. Implemented as a solo developer.
+                            </p>
+                            <div class="mb-6">
+                                <h4 class="font-semibold mb-2">Key Features:</h4>
+                                <ul class="list-disc list-inside text-gray-400 space-y-1">
+                                    <li>Efficient database connectivity for storage and retrieval</li>
+                                    <li>Customer profiles and vehicle details management</li>
+                                    <li>Service scheduling and progress tracking</li>
+                                    <li>Staff management capabilities</li>
+                                </ul>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-indigo-900/30 text-indigo-300 px-3 py-1 rounded-full text-sm border border-indigo-700/30">DBMS</span>
+                                <span class="bg-blue-900/30 text-blue-300 px-3 py-1 rounded-full text-sm border border-blue-700/30">MySQL</span>
+                                <span class="bg-green-900/30 text-green-300 px-3 py-1 rounded-full text-sm border border-green-700/30">PHP</span>
+                                <span class="bg-orange-900/30 text-orange-300 px-3 py-1 rounded-full text-sm border border-orange-700/30">Full Stack</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <button onclick="showVehicleServiceDemo()" class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-4 py-2 rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-all duration-200 flex items-center gap-2">
+                                    <i class="fas fa-play-circle"></i>
+                                    View Demo
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="bg-gray-800/50 rounded-lg shadow-xl overflow-hidden card-hover border border-gray-700">
+                    <div class="md:flex">
+                        <div class="md:w-1/3 relative overflow-hidden bg-gradient-to-br from-cyan-600 to-blue-800">
+                            <img src="https://images.unsplash.com/photo-1464207687429-7505649dae38?w=400&h=300&fit=crop" alt="Birthday Planning AI" class="w-full h-full object-cover opacity-70">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="text-center text-white p-4">
+                                    <i class="fas fa-birthday-cake text-6xl mb-2"></i>
+                                    <p class="text-sm font-semibold">AI Party Planner</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 p-8">
+                            <h3 class="text-2xl font-bold mb-4 text-cyan-300">BirthdayPlannerBot</h3>
+                            <p class="text-gray-300 mb-6 leading-relaxed">
+                                AI-Powered Birthday Planning Web Application that helps users plan birthday celebrations effortlessly using AI-generated ideas. 
+                                Acts as a digital assistant that suggests themes, decorations, activities, and food based on user preferences.
+                            </p>
+                            <div class="mb-6">
+                                <h4 class="font-semibold mb-2">Key Features:</h4>
+                                <ul class="list-disc list-inside text-gray-400 space-y-1">
+                                    <li>AI-powered party idea generator (Google Gemini API)</li>
+                                    <li>User authentication (Login & Registration system)</li>
+                                    <li>Admin dashboard for managing users and reviews</li>
+                                    <li>MySQL database integration</li>
+                                    <li>Interactive chatbot interface</li>
+                                    <li>Responsive design (mobile + desktop support)</li>
+                                    <li>Basic payment and planning modules</li>
+                                </ul>
+                            </div>
+                            <div class="mb-6">
+                                <h4 class="font-semibold mb-2">How It Works:</h4>
+                                <p class="text-gray-400 text-sm">
+                                    Users can log in to the platform and enter details like age, theme, and type of celebration. 
+                                    The AI system then generates personalized birthday planning ideas. Admins can manage user data 
+                                    and monitor feedback through a dedicated dashboard.
+                                </p>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-cyan-900/30 text-cyan-300 px-3 py-1 rounded-full text-sm border border-cyan-700/30">HTML/CSS/JS</span>
+                                <span class="bg-blue-900/30 text-blue-300 px-3 py-1 rounded-full text-sm border border-blue-700/30">PHP</span>
+                                <span class="bg-indigo-900/30 text-indigo-300 px-3 py-1 rounded-full text-sm border border-indigo-700/30">MySQL</span>
+                                <span class="bg-purple-900/30 text-purple-300 px-3 py-1 rounded-full text-sm border border-purple-700/30">Google Gemini API</span>
+                                <span class="bg-green-900/30 text-green-300 px-3 py-1 rounded-full text-sm border border-green-700/30">Full Stack</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="bg-gray-800/50 rounded-lg shadow-xl overflow-hidden card-hover border border-gray-700">
+                    <div class="md:flex">
+                        <div class="md:w-1/3 relative overflow-hidden bg-gradient-to-br from-green-600 to-teal-800">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop" alt="ML Loan Prediction" class="w-full h-full object-cover opacity-70">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="text-center text-white p-4">
+                                    <i class="fas fa-chart-line text-6xl mb-2"></i>
+                                    <p class="text-sm font-semibold">ML Risk Analysis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-2/3 p-8">
+                            <h3 class="text-2xl font-bold mb-4 text-green-300">Loan Default Prediction System</h3>
+                            <p class="text-gray-300 mb-6 leading-relaxed">
+                                Machine Learning-Based Risk Analysis Application designed to predict whether a loan applicant is likely to default or repay the loan. 
+                                Helps financial institutions make smarter lending decisions by analyzing applicant data and identifying risk patterns.
+                            </p>
+                            <div class="mb-6">
+                                <h4 class="font-semibold mb-2">Key Features:</h4>
+                                <ul class="list-disc list-inside text-gray-400 space-y-1">
+                                    <li>Predicts loan default using ML algorithms</li>
+                                    <li>Data preprocessing and feature engineering</li>
+                                    <li>Risk analysis based on applicant details</li>
+                                    <li>Trained machine learning model for classification</li>
+                                    <li>Performance evaluation (accuracy, precision, etc.)</li>
+                                    <li>User input interface for predictions</li>
+                                </ul>
+                            </div>
+                            <div class="mb-6">
+                                <h4 class="font-semibold mb-2">Model Workflow:</h4>
+                                <ul class="list-disc list-inside text-gray-400 space-y-1 text-sm">
+                                    <li>Data Collection → Data Cleaning & Preprocessing</li>
+                                    <li>Feature Selection → Model Training</li>
+                                    <li>Evaluation → Prediction Output</li>
+                                </ul>
+                            </div>
+                            <div class="mb-6">
+                                <h4 class="font-semibold mb-2">How It Works:</h4>
+                                <p class="text-gray-400 text-sm">
+                                    The system takes user input such as income, credit history, and loan amount. 
+                                    The data is processed and passed into a trained machine learning model, 
+                                    which predicts whether applicant is likely to default or not.
+                                </p>
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-green-900/30 text-green-300 px-3 py-1 rounded-full text-sm border border-green-700/30">Python</span>
+                                <span class="bg-teal-900/30 text-teal-300 px-3 py-1 rounded-full text-sm border border-teal-700/30">Pandas</span>
+                                <span class="bg-blue-900/30 text-blue-300 px-3 py-1 rounded-full text-sm border border-blue-700/30">NumPy</span>
+                                <span class="bg-indigo-900/30 text-indigo-300 px-3 py-1 rounded-full text-sm border border-indigo-700/30">Scikit-learn</span>
+                                <span class="bg-purple-900/30 text-purple-300 px-3 py-1 rounded-full text-sm border border-purple-700/30">Matplotlib</span>
+                                <span class="bg-cyan-900/30 text-cyan-300 px-3 py-1 rounded-full text-sm border border-cyan-700/30">ML Classification</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-20 darker-section">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text">Certifications</h2>
+            
+            <!-- Internship Certifications -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold text-center mb-8 text-blue-300">Internship Certifications</h3>
+                <div class="grid md:grid-cols-1 gap-8 max-w-2xl mx-auto">
+                    <div class="bg-gradient-to-br from-blue-900/30 to-cyan-900/30 p-6 rounded-lg text-center card-hover border border-cyan-700/30 cursor-pointer" onclick="showCertificationDetails()">
+                        <div class="bg-cyan-900/50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-certificate text-cyan-400 text-2xl"></i>
+                        </div>
+                        <h3 class="font-semibold mb-2">Cloud Computing</h3>
+                        <p class="text-sm text-gray-400">Cloud Technologies Certification</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Global Certifications -->
+            <div>
+                <h3 class="text-2xl font-semibold text-center mb-8 text-green-300">Global Certifications</h3>
+                <div class="flex justify-center">
+                    <div class="w-full max-w-xl bg-gradient-to-br from-blue-900/30 to-purple-900/30 p-6 rounded-lg text-center card-hover border border-blue-700/30">
+                        <div class="bg-blue-900/50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-chart-bar text-blue-400 text-2xl"></i>
+                        </div>
+                        <h3 class="font-semibold mb-2">SAP Certified Data Analyst</h3>
+                        <div class="mt-4 text-left">
+                            <p class="text-xs text-gray-400 leading-relaxed">The Beginner Learning Journey Exploring SAP Analytics Cloud Builds up-to basic Knowledge of SAP Analytics Cloud and is relevant for Passing the Certification.</p>
+                        </div>
+                        <div class="mt-4">
+                            <a href="sap-certifications.html" class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-4 py-2 rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-all duration-200 inline-flex items-center gap-2 text-sm">
+                                <i class="fas fa-external-link-alt"></i>
+                                View Full Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>        </div>
+    </section>
+
+    <!-- Certification Details Modal -->
+    <div id="certificationModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden">
+        <div class="bg-gray-800 p-8 rounded-lg shadow-xl max-w-3xl mx-auto relative text-gray-200 overflow-y-auto max-h-[90vh]">
+            <button class="absolute top-4 right-4 text-gray-400 hover:text-white text-2xl" onclick="hideCertificationDetails()">&times;</button>
+            <h3 class="text-3xl font-bold gradient-text mb-6">Cloud Computing Internship & Certification</h3>
+
+            <div class="mb-6">
+                <h4 class="font-semibold text-blue-300 mb-2">Overview</h4>
+                <p class="text-gray-300">Successfully completed a one-month internship focused on Cloud Computing, where I gained practical exposure to cloud technologies, deployment concepts, and real-world applications.</p>
+            </div>
+
+            <div class="mb-6">
+                <h4 class="font-semibold text-blue-300 mb-2">Duration</h4>
+                <p class="text-gray-300">01 July 2025 – 31 July 2025</p>
+            </div>
+
+            <div class="mb-6">
+                <h4 class="font-semibold text-blue-300 mb-2">Academic Details</h4>
+                <p class="text-gray-300">Degree: Bachelor of Engineering in Computer Science (Artificial Intelligence and Machine Learning)</p>
+                <p class="text-gray-300">College: M. Kumarasamy College of Engineering (Affiliated by Anna University, Autonomous)</p>
+                <p class="text-gray-300">Batch: 2023-2027</p>
+            </div>
+
+            <div class="mb-6">
+                <h4 class="font-semibold text-blue-300 mb-2">Key Learnings & Responsibilities</h4>
+                <ul class="list-disc list-inside text-gray-300 space-y-1">
+                    <li>Understanding cloud computing fundamentals (IaaS, PaaS, SaaS)</li>
+                    <li>Working with cloud-based services and deployment concepts</li>
+                    <li>Basics of cloud security and data management</li>
+                    <li>Hands-on exposure to real-time cloud applications</li>
+                    <li>Learning scalability, storage, and virtualization concepts</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <h4 class="font-semibold text-blue-300 mb-2">Skills Gained</h4>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-blue-900/30 text-blue-300 px-3 py-1 rounded-full text-sm border border-blue-700/30">Cloud Computing Concepts</span>
+                    <span class="bg-purple-900/30 text-purple-300 px-3 py-1 rounded-full text-sm border border-purple-700/30">Deployment & Hosting Basics</span>
+                    <span class="bg-indigo-900/30 text-indigo-300 px-3 py-1 rounded-full text-sm border border-indigo-700/30">Problem Solving</span>
+                    <span class="bg-cyan-900/30 text-cyan-300 px-3 py-1 rounded-full text-sm border border-cyan-700/30">Analytical Thinking</span>
+                    <span class="bg-green-900/30 text-green-300 px-3 py-1 rounded-full text-sm border border-green-700/30">Team Collaboration</span>
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <h4 class="font-semibold text-blue-300 mb-2">Soft Skills Highlighted</h4>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-green-900/30 text-green-300 px-3 py-1 rounded-full text-sm border border-green-700/30">✓ Punctual</span>
+                    <span class="bg-blue-900/30 text-blue-300 px-3 py-1 rounded-full text-sm border border-blue-700/30">✓ Hardworking</span>
+                    <span class="bg-purple-900/30 text-purple-300 px-3 py-1 rounded-full text-sm border border-purple-700/30">✓ Inquisitive learner</span>
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <h4 class="font-semibold text-blue-300 mb-2">Certification</h4>
+                <p class="text-gray-300">Awarded Internship Completion Certificate for successfully completing the program with good performance.</p>
+            </div>
+
+            <div class="mb-6">
+                <h4 class="font-semibold text-blue-300 mb-2">Reflection</h4>
+                <p class="text-gray-300 italic">"This internship helped me understand real-world cloud systems and boosted my interest in backend and scalable technologies."</p>
+            </div>
+
+            <div class="flex gap-4">
+                <a href="cloud-certifications.html" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition inline-flex items-center">
+                    <i class="fas fa-certificate mr-2"></i> View Certificate
+                </a>
+                <button onclick="hideCertificationDetails()" class="bg-gray-600 text-white px-6 py-2 rounded-lg hover:bg-gray-700 transition">
+                    <i class="fas fa-times mr-2"></i> Close
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Certificate Image Modal -->
+    <div id="certificateImageModal" class="fixed inset-0 bg-black bg-opacity-95 flex items-center justify-center z-50 hidden opacity-0 transition-opacity duration-300">
+        <div class="relative max-w-5xl max-h-[90vh] mx-auto p-6 transform scale-95 transition-transform duration-300">
+            <!-- Close Button -->
+            <button class="absolute top-4 right-4 text-white bg-gray-900/80 backdrop-blur-sm rounded-full p-3 hover:bg-gray-800/90 transition-all duration-200 z-10 group" onclick="hideCertificateImage()">
+                <i class="fas fa-times text-xl group-hover:rotate-90 transition-transform duration-200"></i>
+            </button>
+            
+            <!-- Certificate Container -->
+            <div class="bg-gray-900/90 backdrop-blur-sm rounded-2xl p-6 shadow-2xl border border-gray-700/50">
+                <h3 class="text-2xl font-bold text-white mb-4 text-center">Cloud Computing</h3>
+                
+                <!-- Certificate Counter -->
+                <div class="text-center mb-4">
+                    <span class="text-gray-300 text-sm">Certificate </span>
+                    <span id="certificateNumber" class="text-blue-400 font-bold">1</span>
+                    <span class="text-gray-300 text-sm"> of </span>
+                    <span id="totalCertificates" class="text-blue-400 font-bold">2</span>
+                </div>
+                
+                <!-- Certificate Image -->
+                <div class="relative rounded-lg overflow-hidden bg-black mb-4">
+                    <img id="certificateImage" src="images/4eaadb9f-47e0-4997-868b-2df4b7cb0bad.jpg" alt="Certificate" class="w-full h-auto max-h-[60vh] object-contain">
+                </div>
+                
+                <!-- Navigation Buttons -->
+                <div class="flex justify-between items-center">
+                    <button id="prevCertificate" onclick="previousCertificate()" class="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition-all duration-200 flex items-center gap-2">
+                        <i class="fas fa-chevron-left"></i>
+                        Previous
+                    </button>
+                    <button id="nextCertificate" onclick="nextCertificate()" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-all duration-200 flex items-center gap-2">
+                        Next
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <!-- Loading State -->
+                <div id="certificateLoading" class="absolute inset-0 flex items-center justify-center bg-gray-900/90 rounded-lg hidden">
+                    <div class="text-center">
+                        <i class="fas fa-spinner fa-spin text-4xl text-blue-400 mb-4"></i>
+                        <p class="text-gray-300">Loading certificate...</p>
+                    </div>
+                </div>
+                
+                <!-- Error State -->
+                <div id="certificateError" class="absolute inset-0 flex items-center justify-center bg-gray-900/90 rounded-lg hidden">
+                    <div class="text-center">
+                        <i class="fas fa-exclamation-triangle text-4xl text-yellow-400 mb-4"></i>
+                        <p class="text-gray-300">Certificate image not found</p>
+                        <p class="text-gray-500 text-sm mt-2">Please ensure certificate images are in the images folder</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Demo Video Modal -->
+    <div id="demoVideoModal" class="fixed inset-0 bg-black bg-opacity-95 flex items-center justify-center z-50 hidden opacity-0 transition-opacity duration-300">
+        <!-- Background Content -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-indigo-900/20"></div>
+            <div class="absolute top-8 left-8 text-white max-w-md">
+                <h2 class="text-3xl font-bold mb-4 text-blue-300">ChefSphere Features</h2>
+                <ul class="space-y-2 text-gray-300">
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                        <span>AI-powered recipe recommendations</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                        <span>Real-time ingredient tracking</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                        <span>Smart appliance integration</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                        <span>Voice-controlled cooking guidance</span>
+                    </li>
+                    <li class="flex items-start gap-2">
+                        <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                        <span>Temperature & safety monitoring</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="absolute bottom-8 right-8 text-white max-w-md">
+                <h3 class="text-2xl font-bold mb-3 text-indigo-300">Technologies Used</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-blue-800/50 px-3 py-1 rounded-full text-sm">IoT</span>
+                    <span class="bg-indigo-800/50 px-3 py-1 rounded-full text-sm">AI</span>
+                    <span class="bg-cyan-800/50 px-3 py-1 rounded-full text-sm">ESP32</span>
+                    <span class="bg-green-800/50 px-3 py-1 rounded-full text-sm">Mobile App</span>
+                    <span class="bg-purple-800/50 px-3 py-1 rounded-full text-sm">Machine Learning</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="relative max-w-7xl max-h-[95vh] mx-auto p-4 transform scale-95 transition-transform duration-300 z-10">
+            <!-- Close Button -->
+            <button class="absolute top-4 right-4 text-white bg-gray-900/80 backdrop-blur-sm rounded-full p-3 hover:bg-gray-800/90 transition-all duration-200 z-10 group" onclick="hideDemoVideo()">
+                <i class="fas fa-times text-xl group-hover:rotate-90 transition-transform duration-200"></i>
+            </button>
+            
+            <!-- Video Container -->
+            <div class="bg-gray-900/90 backdrop-blur-sm rounded-2xl p-6 shadow-2xl border border-gray-700/50">
+                <div class="relative rounded-lg overflow-hidden bg-black">
+                    <!-- Google Drive Video Embed -->
+                    <div class="aspect-video relative">
+                        <video id="demoVideo" class="w-full h-full object-contain" controls autoplay>
+                            <source src="vedios.1/vedio.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="py-20 dark-section">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text">Achievements & Awards</h2>
+            
+            <div class="space-y-6 max-w-4xl mx-auto">
+                <div class="bg-gray-800/50 p-6 rounded-lg shadow-md card-hover border border-gray-700">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-blue-900/50 p-3 rounded-full">
+                            <i class="fas fa-trophy text-blue-400"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold mb-1">Paper Presentation</h3>
+                            <p class="text-gray-300">Presented "Smart Home Security System" at Sri Ramakrishna Engineering College, Coimbatore (2024)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800/50 p-6 rounded-lg shadow-md card-hover border border-gray-700">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-indigo-900/50 p-3 rounded-full">
+                            <i class="fas fa-code text-indigo-400"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold mb-1">Hackathon Participation</h3>
+                            <p class="text-gray-300">Participated in Hackathon at Coimbatore Institute Of Technology, Coimbatore (2025)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800/50 p-6 rounded-lg shadow-md card-hover border border-gray-700">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-cyan-900/50 p-3 rounded-full">
+                            <i class="fas fa-laptop-code text-cyan-400"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold mb-1">24-Hour Hackathon</h3>
+                            <p class="text-gray-300">Participated in 24-hour Hackathon at K. Ramakrishna College of Engineering, Trichy (2025)</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800/50 p-6 rounded-lg shadow-md card-hover border border-gray-700">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-green-900/50 p-3 rounded-full">
+                            <i class="fas fa-award text-green-400"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold mb-1">National Level Hackathon</h3>
+                            <p class="text-gray-300">Participated in 'CODEWAVE-26' National Level HACKATHON at SRM Institute of Science and Technology, Chennai-Ramapuram (2026)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests & Languages Section -->
+    <section id="interests" class="py-20 darker-section">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text">Interests & Languages</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-blue-300">
+                        <i class="fas fa-heart mr-2"></i> Interests
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="bg-blue-900/30 p-4 rounded-lg border border-blue-700/30">
+                            <h4 class="font-semibold mb-2">Coding Languages</h4>
+                            <p class="text-gray-300">Exploring new programming languages and paradigms</p>
+                        </div>
+                        <div class="bg-indigo-900/30 p-4 rounded-lg border border-indigo-700/30">
+                            <h4 class="font-semibold mb-2">Full Stack Development</h4>
+                            <p class="text-gray-300">Building end-to-end web applications</p>
+                        </div>
+                        <div class="bg-cyan-900/30 p-4 rounded-lg border border-cyan-700/30">
+                            <h4 class="font-semibold mb-2">Mobile App Development</h4>
+                            <p class="text-gray-300">Creating innovative mobile solutions</p>
+                        </div>
+                        <div class="bg-green-900/30 p-4 rounded-lg border border-green-700/30">
+                            <h4 class="font-semibold mb-2">Web Development</h4>
+                            <p class="text-gray-300">Modern web technologies and frameworks</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-indigo-300">
+                        <i class="fas fa-language mr-2"></i> Languages
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="bg-indigo-900/30 p-4 rounded-lg border border-indigo-700/30">
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <h4 class="font-semibold">English</h4>
+                                    <p class="text-gray-400">Fluent</p>
+                                </div>
+                                <div class="flex gap-1">
+                                    <div class="w-2 h-8 bg-indigo-400 rounded"></div>
+                                    <div class="w-2 h-8 bg-indigo-400 rounded"></div>
+                                    <div class="w-2 h-8 bg-indigo-400 rounded"></div>
+                                    <div class="w-2 h-8 bg-indigo-400 rounded"></div>
+                                    <div class="w-2 h-8 bg-indigo-400 rounded"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-cyan-900/30 p-4 rounded-lg border border-cyan-700/30">
+                            <div class="flex justify-between items-center">
+                                <div>
+                                    <h4 class="font-semibold">Tamil</h4>
+                                    <p class="text-gray-400">Native</p>
+                                </div>
+                                <div class="flex gap-1">
+                                    <div class="w-2 h-8 bg-cyan-400 rounded"></div>
+                                    <div class="w-2 h-8 bg-cyan-400 rounded"></div>
+                                    <div class="w-2 h-8 bg-cyan-400 rounded"></div>
+                                    <div class="w-2 h-8 bg-cyan-400 rounded"></div>
+                                    <div class="w-2 h-8 bg-cyan-400 rounded"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 dark-section">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 gradient-text">Get In Touch</h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gray-800/50 rounded-lg shadow-xl p-8 border border-gray-700">
+                    <div class="max-w-2xl mx-auto">
+                        <div>
+                            <h3 class="text-xl font-semibold mb-6">Contact Information</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-center gap-3">
+                                    <i class="fas fa-envelope text-blue-400"></i>
+                                    <span class="text-gray-300">sangaviboopal50@gmail.com</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <i class="fas fa-phone text-blue-400"></i>
+                                    <span class="text-gray-300">9600437930</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <i class="fas fa-map-marker-alt text-blue-400"></i>
+                                    <span class="text-gray-300">Dharmapuri, Tamil Nadu</span>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-8">
+                                <h4 class="font-semibold mb-4">Follow Me</h4>
+                                <div class="flex gap-4">
+                                    <a href="https://www.linkedin.com/in/sangavi-b" target="_blank" rel="noopener noreferrer" class="bg-blue-900/30 p-3 rounded-full hover:bg-blue-800/50 transition border border-blue-700/30" title="Connect with me on LinkedIn">
+                                        <i class="fab fa-linkedin text-blue-400"></i>
+                                    </a>
+                                    <a href="https://github.com/Sangavi-04" target="_blank" rel="noopener noreferrer" class="bg-indigo-900/30 p-3 rounded-full hover:bg-indigo-800/50 transition border border-indigo-700/30" title="View my GitHub profile">
+                                        <i class="fab fa-github text-indigo-400"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Sangavi B. All rights reserved.</p>
+            <p class="mt-2 text-gray-400">Designed with <i class="fas fa-heart text-red-500"></i> and <i class="fas fa-code text-blue-500"></i></p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-gray-900 z-50 hidden">
+        <div class="flex justify-between items-center p-6 border-b border-gray-700">
+            <h2 class="text-2xl font-bold gradient-text">Menu</h2>
+            <button id="close-menu-btn" class="text-white">
+                <i class="fas fa-times text-2xl"></i>
+            </button>
+        </div>
+        <nav class="p-6">
+            <ul class="space-y-4">
+                <li><a href="#about" class="block py-2 text-lg text-gray-300 hover:text-blue-400">About</a></li>
+                <li><a href="#education" class="block py-2 text-lg text-gray-300 hover:text-blue-400">Education</a></li>
+                <li><a href="#skills" class="block py-2 text-lg text-gray-300 hover:text-blue-400">Skills</a></li>
+                <li><a href="#projects" class="block py-2 text-lg text-gray-300 hover:text-blue-400">Projects</a></li>
+                <li><a href="#certifications" class="block py-2 text-lg text-gray-300 hover:text-blue-400">Certifications</a></li>
+                <li><a href="#achievements" class="block py-2 text-lg text-gray-300 hover:text-blue-400">Achievements</a></li>
+                <li><a href="#contact" class="block py-2 text-lg text-gray-300 hover:text-blue-400">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <script>
+        // Mobile menu functionality
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+        });
+        
+        closeMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+        
+        // Close mobile menu when clicking on a link
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Form submission handler
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
+        });
+        
+        // Certification modal functions
+        function showCertificationDetails() {
+            const modal = document.getElementById('certificationModal');
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function hideCertificationDetails() {
+            const modal = document.getElementById('certificationModal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Certificate image modal functions
+        let currentCertificateIndex = 0;
+        const certificates = [
+            'images/4eaadb9f-47e0-4997-868b-2df4b7cb0bad.jpg',
+            'images/160c707e-0eca-4a82-b117-a8f9c8b52a44.jpg'
+        ];
+
+        function showCertificateImage() {
+            const modal = document.getElementById('certificateImageModal');
+            const modalContent = modal.querySelector('.transform');
+            
+            // Reset to first certificate
+            currentCertificateIndex = 0;
+            updateCertificateDisplay();
+            
+            // Show modal with animation
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            
+            // Trigger animations
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modal.classList.add('opacity-100');
+                modalContent.classList.remove('scale-95');
+                modalContent.classList.add('scale-100');
+            }, 10);
+        }
+
+        function updateCertificateDisplay() {
+            const image = document.getElementById('certificateImage');
+            const numberDisplay = document.getElementById('certificateNumber');
+            const totalDisplay = document.getElementById('totalCertificates');
+            const prevButton = document.getElementById('prevCertificate');
+            const nextButton = document.getElementById('nextCertificate');
+            
+            // Update image
+            image.src = certificates[currentCertificateIndex];
+            
+            // Update counter
+            numberDisplay.textContent = currentCertificateIndex + 1;
+            totalDisplay.textContent = certificates.length;
+            
+            // Update button states
+            prevButton.disabled = currentCertificateIndex === 0;
+            nextButton.disabled = currentCertificateIndex === certificates.length - 1;
+            
+            // Update button styles
+            if (currentCertificateIndex === 0) {
+                prevButton.classList.add('opacity-50', 'cursor-not-allowed');
+            } else {
+                prevButton.classList.remove('opacity-50', 'cursor-not-allowed');
+            }
+            
+            if (currentCertificateIndex === certificates.length - 1) {
+                nextButton.classList.add('opacity-50', 'cursor-not-allowed');
+            } else {
+                nextButton.classList.remove('opacity-50', 'cursor-not-allowed');
+            }
+        }
+
+        function previousCertificate() {
+            if (currentCertificateIndex > 0) {
+                currentCertificateIndex--;
+                updateCertificateDisplay();
+            }
+        }
+
+        function nextCertificate() {
+            if (currentCertificateIndex < certificates.length - 1) {
+                currentCertificateIndex++;
+                updateCertificateDisplay();
+            }
+        }
+        
+        function hideCertificateImage() {
+            const modal = document.getElementById('certificateImageModal');
+            const modalContent = modal.querySelector('.transform');
+            
+            // Reverse animations
+            modal.classList.remove('opacity-100');
+            modal.classList.add('opacity-0');
+            modalContent.classList.remove('scale-100');
+            modalContent.classList.add('scale-95');
+            
+            // Hide modal after animation
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }, 300);
+        }
+        
+        // Demo video modal functions
+        function showDemoVideo() {
+            const modal = document.getElementById('demoVideoModal');
+            const modalContent = modal.querySelector('.transform');
+            const video = document.getElementById('demoVideo');
+            
+            // Update video source for general demo
+            video.src = 'videos/vedio.mp4';
+            
+            // Show modal with animation
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            
+            // Trigger animations
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modal.classList.add('opacity-100');
+                modalContent.classList.remove('scale-95');
+                modalContent.classList.add('scale-100');
+            }, 10);
+        }
+        
+        function showVehicleServiceDemo() {
+            const modal = document.getElementById('demoVideoModal');
+            const modalContent = modal.querySelector('.transform');
+            const video = document.getElementById('demoVideo');
+            const title = modal.querySelector('h3');
+            
+            // Update video source for Vehicle Service specifically
+            video.src = 'vedios.2/vedio 2.mp4';
+            
+            // Update title for Vehicle Service
+            title.textContent = 'VSCMS-DEMO';
+            
+            // Update background content for Vehicle Service
+            const featuresSection = modal.querySelector('.absolute.top-8.left-8');
+            const techSection = modal.querySelector('.absolute.bottom-8.right-8');
+            
+            if (featuresSection) {
+                featuresSection.innerHTML = `
+                    <h2 class="text-3xl font-bold mb-4 text-blue-300">VSCMS Features</h2>
+                    <ul class="space-y-2 text-gray-300">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                            <span>Vehicle appointment scheduling</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                            <span>Service history tracking</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                            <span>Customer management system</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                            <span>Inventory management</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check-circle text-green-400 mt-1"></i>
+                            <span>Staff management capabilities</span>
+                        </li>
+                    </ul>
+                `;
+            }
+            
+            if (techSection) {
+                techSection.innerHTML = `
+                    <h3 class="text-2xl font-bold mb-3 text-indigo-300">Technologies Used</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-indigo-800/50 px-3 py-1 rounded-full text-sm">DBMS</span>
+                        <span class="bg-blue-800/50 px-3 py-1 rounded-full text-sm">MySQL</span>
+                        <span class="bg-green-800/50 px-3 py-1 rounded-full text-sm">PHP</span>
+                        <span class="bg-orange-800/50 px-3 py-1 rounded-full text-sm">Full Stack</span>
+                    </div>
+                `;
+            }
+            
+            // Use much smaller size and center position with top margin for maximum background visibility
+            modal.querySelector('.relative').className = 'relative max-w-xl max-h-[50vh] mx-auto mt-8 p-6 transform scale-95 transition-transform duration-300';
+            
+            // Show modal with animation
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            
+            // Trigger animations
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modal.classList.add('opacity-100');
+                modalContent.classList.remove('scale-95');
+                modalContent.classList.add('scale-100');
+            }, 10);
+        }
+        
+        function showChefSphereDemo() {
+            const modal = document.getElementById('demoVideoModal');
+            const modalContent = modal.querySelector('.transform');
+            const video = document.getElementById('demoVideo');
+            const title = modal.querySelector('h3');
+            
+            // Update video source for Chef Sphere specifically
+            video.src = 'vedios.1/vedio.mp4';
+            
+            // Update title for Chef Sphere
+            title.textContent = 'DEMO';
+            
+            // Use larger size (max-w-7xl, max-h-[95vh], p-4)
+            modal.querySelector('.relative').className = 'relative max-w-7xl max-h-[95vh] mx-auto p-4 transform scale-95 transition-transform duration-300';
+            
+            // Show modal with animation
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            
+            // Trigger animations
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modal.classList.add('opacity-100');
+                modalContent.classList.remove('scale-95');
+                modalContent.classList.add('scale-100');
+            }, 10);
+        }
+        
+        function hideDemoVideo() {
+            const modal = document.getElementById('demoVideoModal');
+            const modalContent = modal.querySelector('.transform');
+            const video = document.getElementById('demoVideo');
+            
+            // Stop video if playing
+            if (video) {
+                video.pause();
+                video.currentTime = 0;
+            }
+            
+            // Reverse animations
+            modal.classList.remove('opacity-100');
+            modal.classList.add('opacity-0');
+            modalContent.classList.remove('scale-100');
+            modalContent.classList.add('scale-95');
+            
+            // Hide modal after animation
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }, 300);
+        }
+        
+        function downloadCertificate() {
+            const link = document.createElement('a');
+            link.href = 'images/4eaadb9f-47e0-4997-868b-2df4b7cb0bad.jpg';
+            link.download = 'Cloud_Computing_Certificate.jpg';
+            link.target = '_blank';
+            
+            // Handle download error
+            link.onerror = function() {
+                alert('Certificate image not found. Please ensure the image is available.');
+            };
+            
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+        
+        // Close modals when clicking outside
+        document.getElementById('certificationModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                hideCertificationDetails();
+            }
+        });
+        
+        document.getElementById('certificateImageModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                hideCertificateImage();
+            }
+        });
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                const certModal = document.getElementById('certificationModal');
+                const imageModal = document.getElementById('certificateImageModal');
+                
+                if (!imageModal.classList.contains('hidden')) {
+                    hideCertificateImage();
+                } else if (!certModal.classList.contains('hidden')) {
+                    hideCertificationDetails();
+                }
+            }
+        });
+        
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-up');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

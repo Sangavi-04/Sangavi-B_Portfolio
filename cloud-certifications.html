@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing Certifications - Sangavi B</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .dark-section {
+            background: linear-gradient(135deg, #050510 0%, #15152a 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body class="text-gray-100">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-gray-900/90 backdrop-blur-sm shadow-lg z-50 border-b border-cyan-800/30">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold gradient-text">Sangavi B</h1>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="hover:text-cyan-400 transition">← Back to Portfolio</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-white">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="pt-20 min-h-screen dark-section">
+        <div class="container mx-auto px-6 py-12">
+            <!-- Header -->
+            <div class="text-center mb-12">
+                <h1 class="text-4xl font-bold mb-4 gradient-text">Cloud Computing Certifications</h1>
+                <p class="text-xl text-gray-300 mb-8">Successfully completed a one-month internship focused on Cloud Computing, where I gained practical exposure to cloud technologies, deployment concepts, and real-world applications.</p>
+            </div>
+
+            <!-- Certificate Overview -->
+            <div class="max-w-4xl mx-auto mb-12">
+                <div class="bg-gray-800/50 rounded-lg shadow-xl p-8 card-hover border border-gray-700">
+                    <div class="flex items-start gap-4 mb-6">
+                        <div class="bg-cyan-900/50 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-cloud text-cyan-400 text-xl"></i>
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold text-cyan-300 mb-2">Cloud Computing Internship & Certification</h2>
+                            <p class="text-gray-400">Awarded Internship Completion Certificate for successfully completing the program with good performance.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-300 mb-3">Duration</h3>
+                            <p class="text-gray-400">One Month Internship Program</p>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-300 mb-3">Certificate Type</h3>
+                            <p class="text-gray-400">Internship Completion Certificate</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certificate Images Section -->
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-8 gradient-text">Certificate Images</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Certificate 1 -->
+                    <div class="bg-gray-800/50 rounded-lg shadow-xl p-6 card-hover border border-gray-700">
+                        <h3 class="text-xl font-semibold text-cyan-300 mb-4 text-center">Certificate 1</h3>
+                        <div class="relative rounded-lg overflow-hidden bg-black mb-4">
+                            <img src="images/4eaadb9f-47e0-4997-868b-2df4b7cb0bad.jpg" alt="Cloud Computing Certificate 1" class="w-full h-auto object-contain rounded-lg">
+                        </div>
+                        <div class="text-center">
+                            <button onclick="viewCertificateModal('images/4eaadb9f-47e0-4997-868b-2df4b7cb0bad.jpg', 1)" class="bg-cyan-600 text-white px-6 py-2 rounded-lg hover:bg-cyan-700 transition-all duration-200 inline-flex items-center gap-2">
+                                <i class="fas fa-expand"></i>
+                                View Full Size
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 2 -->
+                    <div class="bg-gray-800/50 rounded-lg shadow-xl p-6 card-hover border border-gray-700">
+                        <h3 class="text-xl font-semibold text-cyan-300 mb-4 text-center">Certificate 2</h3>
+                        <div class="relative rounded-lg overflow-hidden bg-black mb-4">
+                            <img src="images/160c707e-0eca-4a82-b117-a8f9c8b52a44.jpg" alt="Cloud Computing Certificate 2" class="w-full h-auto object-contain rounded-lg">
+                        </div>
+                        <div class="text-center">
+                            <button onclick="viewCertificateModal('images/160c707e-0eca-4a82-b117-a8f9c8b52a44.jpg', 2)" class="bg-cyan-600 text-white px-6 py-2 rounded-lg hover:bg-cyan-700 transition-all duration-200 inline-flex items-center gap-2">
+                                <i class="fas fa-expand"></i>
+                                View Full Size
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="max-w-4xl mx-auto mt-12">
+                <h2 class="text-3xl font-bold text-center mb-8 gradient-text">Skills Gained</h2>
+                <div class="bg-gray-800/50 rounded-lg shadow-xl p-8 card-hover border border-gray-700">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-300 mb-4">Technical Skills</h3>
+                            <div class="space-y-2">
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-check text-cyan-400"></i>
+                                    <span>Cloud Computing Concepts</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-check text-cyan-400"></i>
+                                    <span>Deployment & Hosting Basics</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-check text-cyan-400"></i>
+                                    <span>Cloud Security Fundamentals</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-300 mb-4">Professional Skills</h3>
+                            <div class="space-y-2">
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-check text-cyan-400"></i>
+                                    <span>Problem Solving</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-check text-cyan-400"></i>
+                                    <span>Analytical Thinking</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-check text-cyan-400"></i>
+                                    <span>Real-time Applications</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back Button -->
+            <div class="text-center mt-12">
+                <a href="index.html" class="bg-gradient-to-r from-cyan-600 to-blue-600 text-white px-8 py-3 rounded-lg hover:from-cyan-700 hover:to-blue-700 transition-all duration-200 inline-flex items-center gap-2">
+                    <i class="fas fa-arrow-left"></i>
+                    Back to Portfolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Modal -->
+    <div id="certificateModal" class="fixed inset-0 bg-black bg-opacity-95 flex items-center justify-center z-50 hidden opacity-0 transition-opacity duration-300">
+        <div class="relative max-w-6xl max-h-[90vh] mx-auto p-6 transform scale-95 transition-transform duration-300">
+            <!-- Close Button -->
+            <button class="absolute top-4 right-4 text-white bg-gray-900/80 backdrop-blur-sm rounded-full p-3 hover:bg-gray-800/90 transition-all duration-200 z-10 group" onclick="hideCertificateModal()">
+                <i class="fas fa-times text-xl group-hover:rotate-90 transition-transform duration-200"></i>
+            </button>
+            
+            <!-- Certificate Container -->
+            <div class="bg-gray-900/90 backdrop-blur-sm rounded-2xl p-6 shadow-2xl border border-gray-700/50">
+                <h3 class="text-2xl font-bold text-white mb-4 text-center">Cloud Computing Certificate</h3>
+                
+                <!-- Certificate Image -->
+                <div class="relative rounded-lg overflow-hidden bg-black mb-4">
+                    <img id="modalCertificateImage" src="" alt="Certificate" class="w-full h-auto max-h-[80vh] object-contain">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400">© 2024 Sangavi B. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Certificate modal functions
+        function viewCertificateModal(imageSrc, certificateNumber) {
+            const modal = document.getElementById('certificateModal');
+            const modalContent = modal.querySelector('.transform');
+            const modalImage = document.getElementById('modalCertificateImage');
+            
+            // Update image
+            modalImage.src = imageSrc;
+            
+            // Show modal with animation
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+            
+            // Trigger animations
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                modal.classList.add('opacity-100');
+                modalContent.classList.remove('scale-95');
+                modalContent.classList.add('scale-100');
+            }, 10);
+        }
+
+        function hideCertificateModal() {
+            const modal = document.getElementById('certificateModal');
+            const modalContent = modal.querySelector('.transform');
+            
+            // Reverse animations
+            modal.classList.remove('opacity-100');
+            modal.classList.add('opacity-0');
+            modalContent.classList.remove('scale-100');
+            modalContent.classList.add('scale-95');
+            
+            // Hide modal after animation
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }, 300);
+        }
+
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            // Add mobile menu functionality if needed
+        });
+    </script>
+</body>
+</html>
